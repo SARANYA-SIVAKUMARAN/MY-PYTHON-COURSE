@@ -1,0 +1,11 @@
+color1=input("Enter the color 1: ")
+color2=input("Enter the color 2: ")
+color3=input("Enter the color 3: ")
+colors=[color1,color2,color3]
+print(colors)
+colors.sort()
+print(colors)
+colors.reverse()
+print(colors)
+colors.append("yellow")
+print(colors)

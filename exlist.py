@@ -1,0 +1,9 @@
+friends=["sakthi","Ananthan","Senthil","Pradheesh","Hari"]
+print(friends)
+print(friends[0])
+print(friends[-2])
+print(friends[:3])
+print(friends[2:4])
+friends[1]="saranya"
+print(friends[1])
+print(friends)

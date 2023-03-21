@@ -1,0 +1,6 @@
+adjective=input("Enter anAdjective: ")
+color=input("Enter a color: ")
+noun=input("Enter a noun: ")
+print("Roses are "+ adjective)
+print("Violets are "+color)
+print("I love "+ noun)
