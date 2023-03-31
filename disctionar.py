@@ -1,0 +1,10 @@
+month={
+    "jan":"january",
+    "feb":"febuary",
+    "mar":"march",
+    "ap":"april",
+    "ma":"may",
+    "ju":"june"
+}
+month["jul"]="july"
+month.get("aug","invalid")
