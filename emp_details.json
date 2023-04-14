@@ -1,0 +1,15 @@
+{
+    "emp_details":
+    [
+        {
+            "emp_name":"saran",
+            "emp_add":"tuty",
+            "emp_age":"23"
+        }, 
+        {
+            "emp_name":"raji",
+            "emp_add" :"tuty",
+            "emp_age" :"24"
+        }   
+    ]
+}    

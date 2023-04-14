@@ -1,0 +1,28 @@
+{
+    "stud_data": [
+        {
+            "name": "raji",
+            "age": "25",
+            "add": "tuty",
+            "course": "c"
+        },
+        {
+            "name": "saran",
+            "age": "23",
+            "add": "tuty",
+            "course": "python"
+        },
+        {
+            "name": "gayu",
+            "age": "26",
+            "add": "tuty",
+            "course": "c++"
+        },
+        {
+            "name": "siva",
+            "age": "30",
+            "add": "tuty",
+            "course": "python"
+        }
+    ]
+}
