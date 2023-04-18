@@ -1,5 +1,16 @@
 import json
 from tabulate import tabulate
+def read_file():
+    f=open("stud_data.json","r")
+    data=json.load(f)
+    f.close()
+    return data
+    
+def write_file(stud_data):
+    f=open("stud_data.json","w")
+    json.dump(stud_data,f,indent=4)
+    f.close()   
+     
 def register():
     print("Welcome to Registration Module!!")
     name=input("Enter your name: ")
@@ -12,39 +23,23 @@ def register():
         "add":add,
         "course":course
     }
-    try:
-        f=open("stud_data.json","r")
-    except FileNotFoundError as error:
-        f=open("stud_data.json","w")  
-        initial_data={"stud_data":[]}
-        json.dump(initial_data,f,indent=4)
-        f.close()  
-        f=open("stud_data.json","r") 
-    stud=json.load(f)
-    stud["stud_data"].append(tem_dict)
-    f.close()
-    f=open("stud_data.json","w")
-    json.dump(stud,f,indent=4)
-    f.close()
+    data=read_file()  
+    data["stud_data"].append(tem_dict)
+    write_file(data)
     print("Register Sucessfully!")
     
 def view_student():
-    f=open("stud_data.json","r")
-    view=json.load(f)
-    f.close()
-    # print("NAME\t"+"AGE\t"+"ADD\t"+"COURSE" )
+    view=read_file()
     sno=1
     table=[["S.NO","NAME","AGE","ADDRESS","COURSE"]]
     for table1 in view["stud_data"]:
-        # print(f"{table['name']}\t{table['age']}\t{table['add']}\t\t{table['course']}") 
+    #     # print(f"{table['name']}\t{table['age']}\t{table['add']}\t\t{table['course']}") 
         tmp_list=[sno,table1['name'],table1['age'],table1['add'],table1['course']]
         table.append(tmp_list)
         sno+=1    
     print(tabulate(table,headers="firstrow"))
     
-def update_student():
-    f=open("stud_data.json","r+")
-    update=json.load(f)
-    f.close()
+# def update_student():
+    
         
     

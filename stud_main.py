@@ -11,12 +11,16 @@ while True:
         stud_fun.register()
     elif option=="2":
         stud_fun.view_student()
+    elif option=="3":
+        stud_fun.update_student() 
+    elif option=="4":
+        stud_fun.delete_student()       
     else:
         print("Invalid choice")
     option1=input("Do you want to continue?(Y/N): ")    
-    if option1=="Y":
+    if option1 in ["Y","y"]:
         continue 
-    elif option1=="N":
+    elif option1 in ["N","n"]:
         print("Thanks for visiting student manager!!")
     else:
         print("invalid choice")
