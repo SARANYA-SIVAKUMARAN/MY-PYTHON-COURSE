@@ -1,26 +1,14 @@
 {
     "stud_data": [
         {
-            "name": "saran",
+            "name": "saranya",
             "age": "23",
             "add": "tuty",
-            "course": "python"
+            "course": "c++"
         },
         {
             "name": "veni",
             "age": "22",
-            "add": "tuty",
-            "course": "python"
-        },
-        {
-            "name": "siva",
-            "age": "26",
-            "add": "tuty",
-            "course": "python"
-        },
-        {
-            "name": "siva",
-            "age": "26",
             "add": "tuty",
             "course": "python"
         }
