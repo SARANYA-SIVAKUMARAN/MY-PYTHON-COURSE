@@ -1,4 +1,14 @@
 {
+    "user_pass": [
+        {
+            "user": "saranya",
+            "password": "saran123"
+        },
+        {
+            "user": "veni",
+            "password": "veni123"
+        }
+    ],
     "stud_data": [
         {
             "name": "saranya",
@@ -11,6 +21,12 @@
             "age": "22",
             "add": "tuty",
             "course": "python"
+        },
+        {
+            "name": "sumathi",
+            "age": "24",
+            "add": "madurai",
+            "course": "maths"
         }
     ]
 }

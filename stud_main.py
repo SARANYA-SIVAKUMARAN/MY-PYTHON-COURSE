@@ -1,6 +1,7 @@
 import stud_fun
 
 print("Welcome to student manager!!")
+stud_fun.user_pass()
 while True:
     print("You can perform the following operations : ")
 

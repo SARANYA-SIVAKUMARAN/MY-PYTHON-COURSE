@@ -1,5 +1,6 @@
 import json
 from tabulate import tabulate
+
 def read_file():
     f=open("stud_data.json","r")
     data=json.load(f)
@@ -10,6 +11,25 @@ def write_file(stud_data):
     f=open("stud_data.json","w")
     json.dump(stud_data,f,indent=4)
     f.close()   
+    
+def user_pass():
+    user=input("username : ")
+    data=read_file()
+    id=1
+    user_flag=False
+    for userid in data['user_pass']:
+        if userid['user']==user:
+            user_flag=True
+            password=input("password : ")
+            if userid['password']==password:
+                break
+            else:
+                print("incorrect password")
+                exit()
+        id+=1
+    if user_flag==False:
+        print("incorrect username") 
+        exit()
      
 def register():
     print("Welcome to Registration Module!!")
