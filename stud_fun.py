@@ -20,16 +20,24 @@ def user_pass():
     for userid in data['user_pass']:
         if userid['user']==user:
             user_flag=True
-            password=input("password : ")
-            if userid['password']==password:
-                break
-            else:
-                print("incorrect password")
-                exit()
-        id+=1
-    if user_flag==False:
-        print("incorrect username") 
-        exit()
+           
+            chance=0
+            while chance<3:
+                password=input("password : ")
+                if userid['password']==password:
+                    print("login Sucessfully")
+                    break   
+                else:
+                    print("incorrect password")
+                chance+=1
+                
+            if chance==3: 
+                exit()       
+            id+=1
+  
+        if user_flag==False:
+            print("incorrect username") 
+            exit()           
      
 def register():
     print("Welcome to Registration Module!!")
